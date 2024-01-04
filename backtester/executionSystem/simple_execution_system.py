@@ -74,7 +74,7 @@ class SimpleExecutionSystem(BaseExecutionSystem):
 
     def getInstrumentExecutionsFromExecutions(self, time, executions):
         instrumentExecutions = []
-        for (instrumentId, position) in executions.iteritems():
+        for (instrumentId, position) in executions.items():
             if position == 0:
                 continue
             instExecution = InstrumentExection(time=time,
